@@ -1,0 +1,16 @@
+{
+  "name": "Example Academic Building",
+  "description": "Small two-wing teaching building for layout import demonstrations.",
+  "places": [
+    {"code":"ROOM-A","label":"Teaching Room A","type":"ROOM","x":130,"y":150},
+    {"code":"JUNCTION","label":"Central Junction","type":"JUNCTION","x":470,"y":310},
+    {"code":"EXIT-1","label":"North Exit","type":"EXIT","x":850,"y":150},
+    {"code":"EXIT-2","label":"South Exit","type":"EXIT","x":850,"y":500}
+  ],
+  "passages": [
+    {"code":"HALL-1","fromCode":"ROOM-A","toCode":"JUNCTION","cost":4,"blocked":false},
+    {"code":"HALL-2","fromCode":"JUNCTION","toCode":"EXIT-1","cost":3,"blocked":false},
+    {"code":"HALL-3","fromCode":"JUNCTION","toCode":"EXIT-2","cost":5,"blocked":false},
+    {"code":"HALL-4","fromCode":"ROOM-A","toCode":"EXIT-2","cost":12,"blocked":false}
+  ]
+}

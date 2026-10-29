@@ -1,0 +1,21 @@
+{
+  "name": "Example Two-Floor Academic Building",
+  "description": "A small two-floor teaching building with a protected stair connection.",
+  "places": [
+    {"code":"ROOM-A","label":"Teaching Room A","type":"ROOM","x":130,"y":150,"floorNumber":1},
+    {"code":"JUNCTION-1","label":"Central Junction","type":"JUNCTION","x":470,"y":310,"floorNumber":1},
+    {"code":"STAIR-1","label":"Protected Stair","type":"STAIR","x":500,"y":500,"floorNumber":1},
+    {"code":"EXIT-1","label":"North Exit","type":"EXIT","x":850,"y":150,"floorNumber":1},
+    {"code":"F2-ROOM","label":"Floor 2 Classroom","type":"ROOM","x":150,"y":170,"floorNumber":2},
+    {"code":"STAIR-2","label":"Protected Stair","type":"STAIR","x":500,"y":500,"floorNumber":2},
+    {"code":"EXIT-2","label":"Floor 2 Exit","type":"EXIT","x":850,"y":220,"floorNumber":2}
+  ],
+  "passages": [
+    {"code":"HALL-1","fromCode":"ROOM-A","toCode":"JUNCTION-1","cost":4,"blocked":false},
+    {"code":"HALL-2","fromCode":"JUNCTION-1","toCode":"EXIT-1","cost":3,"blocked":false},
+    {"code":"VERTICAL-1","fromCode":"JUNCTION-1","toCode":"STAIR-1","cost":2,"blocked":false},
+    {"code":"HALL-3","fromCode":"F2-ROOM","toCode":"STAIR-2","cost":5,"blocked":false},
+    {"code":"VERTICAL-2","fromCode":"STAIR-1","toCode":"STAIR-2","cost":4,"blocked":false},
+    {"code":"HALL-4","fromCode":"STAIR-2","toCode":"EXIT-2","cost":3,"blocked":false}
+  ]
+}
